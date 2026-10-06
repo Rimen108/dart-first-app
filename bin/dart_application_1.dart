@@ -33,4 +33,33 @@ print("Je m'appelle $nom, j'ai $age ans.");
  // Question de compréhension :
  // const :valeur qu’on fixe une fois et qu’on ne peut pas changer
  // final :valeur qu’on fixe une seule fois
+
+ String? surnom; // aucune valeur pour l'instant
+  String? email = 'ahmed@iset.tn'; 
+ 
+ // TODO 1 : afficher le surnom, ou 'Aucun surnom' s'il est null (opérateur ??) 
+
+ print(surnom ?? 'Aucun surnom');
+
+  // TODO 2 : afficher la longueur de email sans planter si email est null (?.)
+  print(email?.length);
+
+  // TODO 3 : donner une valeur à surnom, puis réafficher le TODO 1 
+
+  surnom = 'rimen';
+  print(surnom ?? 'Aucun surnom');
+
+  // TODO 4 : décommenter, lire l'erreur, puis commenter à nouveau 
+  // String? vide;
+  // print(vide!.length); 
+  // Erreur : Null check operator used on a null value
+  print(decrire(null)); 
+  print(decrire('Ahmed')); 
 }
+// TODO 5 : compléter cette fonction 
+// elle renvoie 'Bonjour X' si nom n'est pas null, sinon 'Bonjour visiteur'
+ String decrire(String? nom) {
+   return 'Bonjour ${nom ?? 'visiteur'}';
+}
+// Question de compréhension :
+// Dart n'accepte pas null  pour eviter les erreurs dans le programme
