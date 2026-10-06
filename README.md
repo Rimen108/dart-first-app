@@ -5,3 +5,6 @@ in `lib/`, and example unit test in `test/`.
 
 ## Palier 2 — Sortie attendue :
 ![alt text](image-1.png)
+
+## Palier 3 — Sortie attendue :
+![alt text](image-2.png)
