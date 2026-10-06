@@ -14,3 +14,6 @@ in `lib/`, and example unit test in `test/`.
 
 ## Palier 5 — Sortie attendue :
 ![alt text](image-4.png)
+
+## Exercice de synthèse — Sortie attendue :
+![alt text](image-5.png)
