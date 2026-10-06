@@ -60,6 +60,48 @@ print("Je m'appelle $nom, j'ai $age ans.");
   print(moy(12, 16));
   afficherFiche(nom: 'Ahmed');
   afficherFiche(nom: 'Sarra', classe: 'DSI3', moyenne: 15.5);
+
+List<int> notes = [12, 8, 15, 17, 9];
+// TODO 1 : ajouter la note 11 à la liste 
+
+notes.add(11);
+
+// TODO 2 : afficher le nombre de notes (propriété length) 
+
+print('Nombre de notes : ${notes.length}');
+
+// TODO 3 : afficher chaque note, une par ligne, avec une boucle for 
+
+for (var note in notes) {
+  print(note);
+}
+// TODO 4 : créer une liste des notes >= 10 avec where, puis l'afficher // indice : notes.where((n) => ...).toList() 
+
+final sup = notes.where((n) => n >= 10).toList();
+print('Notes >= 10 : $sup');
+
+// TODO 5 : calculer et afficher la moyenne // indice : une boucle et une variable somme Map<String, int> ages = {'Ahmed': 22, 'Sarra': 21}; 
+int somme = 0;
+  for (var n in notes) {
+    somme += n;
+  }
+  double moyen = somme / notes.length;
+  print('Moyenne : ${moyen.toStringAsFixed(2)}');
+  
+  Map<String, int> ages = {'Ahmed': 22, 'Sarra': 21};
+
+// TODO 6 : ajouter 'Youssef' avec l'âge 23 
+
+ages['Youssef'] = 23;
+
+// TODO 7 : parcourir la map et afficher 'Ahmed a 22 ans'// indice : ages.forEach((cle, valeur) { ... });
+ages.forEach((cle, valeur) {
+  print('$cle a $valeur ans');
+});
+
+// Question de compréhension :
+// Une List contient plusieurs valeurs, tandis qu’une Map contient des valeurs avec une cle
+
 }
 // TODO 5 : compléter cette fonction 
 // elle renvoie 'Bonjour X' si nom n'est pas null, sinon 'Bonjour visiteur'

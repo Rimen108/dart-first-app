@@ -8,3 +8,6 @@ in `lib/`, and example unit test in `test/`.
 
 ## Palier 3 — Sortie attendue :
 ![alt text](image-2.png)
+
+## Palier 4 — Sortie attendue :
+![alt text](image-3.png)
